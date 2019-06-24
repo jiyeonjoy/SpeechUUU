@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FaceDetect.FaceDetectActivity">
+
+    <FrameLayout
+        android:id="@+id/cameraFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <choi02647.com.speechu.FaceDetect.CameraPreview
+            android:id="@+id/cameraPreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <choi02647.com.speechu.FaceDetect.GraphicOverlay
+                android:id="@+id/graphicOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </choi02647.com.speechu.FaceDetect.CameraPreview>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/selectEmoticon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/ic_set_emoticon"
+        android:background="@null"
+        android:padding="10dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="9dp"
+        android:onClick="faceDetectOnclick"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/exitActivity"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:srcCompat="@drawable/ic_close_black"
+        android:background="@null"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="9dp"
+        android:onClick="faceDetectOnclick"/>
+
+    <RelativeLayout
+        android:id="@+id/bottomBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/takePicture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/ic_livestart"
+            android:background="@null"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:onClick="faceDetectOnclick"/>
+
+        <ImageView
+            android:id="@+id/switchCamera"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/ic_rotate"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:layout_alignBaseline="@id/takePicture"
+            android:onClick="faceDetectOnclick"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/emoticonRecycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/takePicture"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:padding="3dp"
+            android:background="@color/gradientBoxColor"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            android:visibility="gone">
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</RelativeLayout>

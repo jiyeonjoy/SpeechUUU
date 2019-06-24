@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Streaming.LiveStreamTitle"
+    android:orientation="vertical"
+    android:background="@color/SecondColor">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!--<TextView-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:text="Title"-->
+        <!--android:textColor="@color/FirstColor"-->
+        <!--android:textSize="25dp"-->
+        <!--android:textStyle="bold" />-->
+
+    <EditText
+        android:id="@+id/title_et"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:hint="Title"
+        android:textColorHint="@color/SecondColor"
+        android:background="@drawable/title_et_circle"
+        android:paddingLeft="10dp"
+        android:textColor="@color/FirstColor"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/start_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_mic"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+
+</LinearLayout>

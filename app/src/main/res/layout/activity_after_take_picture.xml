@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/FifthColor"
+    tools:context=".FaceDetect.AfterTakePicture">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/blueCrown"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:src="@drawable/bluecrown"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/captureIV"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_clickuser"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/downloadBtn"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:onClick="afterPictureOnclick"
+            android:text="사진 변경"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="@drawable/setting_btn_circle"
+            android:textColor="@color/FourthColor"/>
+    <TextView
+        android:id="@+id/backBtn"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="취소"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:onClick="afterPictureOnclick"
+        android:textStyle="bold"
+        android:background="@drawable/setting_btn_circle"
+        android:textColor="@color/FourthColor"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

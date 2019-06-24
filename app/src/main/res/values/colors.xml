@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- SpeechU Main Color !-->
+    <color name="FirstColor">#1C213F</color>
+    <color name="SecondColor">#313A87</color>
+    <color name="ThirdColor">#F3B900</color>
+    <color name="FourthColor">#F5534F</color>
+    <color name="FifthColor">#F8E9E9</color>
+
+    <color name="VodChatBGColor">#456D98AB</color>
+    <color name="thumbnailback">@android:color/darker_gray</color>
+    <color name="ChattingColor">#1C213F</color>
+    <color name="gradientBoxColor">#45ffffff</color>
+
+</resources>
